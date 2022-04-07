@@ -1,0 +1,58 @@
+@import "./media-queries";
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding: 4rem 4rem;
+  position: relative;
+  width: 100%;
+
+  .logo-btn {
+    width: 200px;
+  }
+
+  .entry {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include mobile {
+      font-size: 15px;
+    }
+
+    &:hover {
+      background: #fff;
+      color: blue;
+      border: solid blue 1px;
+      transition: all 1.5s ease;
+      text-transform: uppercase;
+      padding: 7px 7px;
+      border-radius: 15px 15px;
+    }
+  }
+}
+.universo {
+  background: url("../images/Universo3.jpg") no-repeat center center/cover;
+  width: 100%;
+  padding-bottom: 70px;
+
+  @include tablet {
+    overflow: hidden;
+  }
+
+  @include mobile {
+    overflow: hidden;
+  }
+}

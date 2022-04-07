@@ -1,0 +1,48 @@
+@import "./media-queries";
+
+.cur {
+  background: black;
+  color: #fff;
+  width: 100%;
+  padding: 80px 80px;
+
+  @include tablet {
+  }
+
+  @include mobile {
+  }
+
+  &-text {
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+  &-h1 {
+    font-weight: bolder;
+    padding-bottom: 50px;
+    font-size: 45px;
+    text-align: center;
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  &-p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.8px;
+  }
+  &-color {
+    color: rgb(233, 13, 233);
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+}

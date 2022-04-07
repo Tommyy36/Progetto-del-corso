@@ -1,0 +1,182 @@
+.big-container {
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  background: url("../images/coding.jpg") center center/cover no-repeat;
+
+  .V {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    @include tablet {
+      font-size: 10px;
+    }
+
+    @include mobile {
+      font-size: 10px;
+    }
+
+    &-text {
+      .V1 {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 20px;
+
+        @include tablet {
+          padding-left: 15px;
+        }
+
+        @include mobile {
+          padding-left: 15px;
+        }
+
+        p {
+          padding-left: 20px;
+          font-size: 25px;
+          font-weight: bolder;
+          color: black;
+          text-transform: uppercase;
+
+          @include tablet {
+            font-size: 20px;
+          }
+
+          @include mobile {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .registrazione {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+
+    &-titolo {
+      h1 {
+        padding-bottom: 20px;
+        color: black;
+        font-size: 40px;
+
+        @include tablet {
+          font-size: 30px;
+        }
+
+        @include mobile {
+          font-size: 26px;
+        }
+      }
+
+      h3 {
+        padding-bottom: 10px;
+        color: #fff;
+
+        @include tablet {
+          font-size: 23px;
+        }
+
+        @include mobile {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .registrazione-form {
+      padding-top: 20px;
+
+      .name {
+        border-radius: 3px 3px;
+        border: 2px solid blue;
+        color: blue;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 17px;
+        font-family: cursive;
+
+        @include tablet {
+          font-size: 16px;
+        }
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+      .email {
+        border-radius: 3px 3px;
+        border: 2px solid blue;
+        color: blue;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 17px;
+        font-family: cursive;
+
+        @include tablet {
+          font-size: 16px;
+        }
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        @include tablet {
+          font-size: 18px;
+        }
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+
+      a {
+        color: #fff;
+        background: blue;
+        text-decoration: none;
+        border: 2px solid blue;
+        border-radius: 5px 5px;
+        padding: 5px 5px;
+        font-size: large;
+
+        @include tablet {
+          font-size: 16px;
+        }
+
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+      a:hover {
+        font-size: 20px;
+        background: #fff;
+        color: blue;
+        border: solid blue 3px;
+        transition: all 1.5s ease;
+        text-transform: uppercase;
+        padding: 15px 15px;
+
+        @include tablet {
+          font-size: 18px;
+          padding: 8px 8px;
+        }
+
+        @include mobile {
+          font-size: 16px;
+          padding: 8px 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.sec {
+  background: url("../images/Universoastr.jpg") no-repeat center center/cover;
+  color: black;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 45px;
+    padding-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @include tablet {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    @include mobile {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-left {
+    padding-right: 100px;
+
+    h1 {
+      font-weight: bolder;
+      font-size: 30px;
+
+      @include tablet {
+        font-size: 28px;
+      }
+
+      @include mobile {
+        font-size: 25px;
+      }
+    }
+
+    p {
+      padding-bottom: 80px;
+      padding-top: 20px;
+      font-size: 20px;
+      font-size: large;
+
+      @include tablet {
+        font-size: 17px;
+      }
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &-right {
+    h1 {
+      font-weight: bolder;
+      font-size: 30px;
+
+      @include tablet {
+        font-size: 28px;
+      }
+
+      @include mobile {
+        font-size: 25px;
+      }
+    }
+
+    p {
+      padding-bottom: 80px;
+      padding-top: 20px;
+      font-size: 20px;
+      font-size: large;
+
+      @include tablet {
+        font-size: 17px;
+      }
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: solid 2px rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 40px;
+  margin-top: 25px;
+}

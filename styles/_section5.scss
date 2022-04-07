@@ -1,0 +1,63 @@
+.sec5 {
+  color: #fff;
+  background: black;
+  padding-bottom: 50px;
+
+  .title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 40px;
+
+    @include tablet {
+      font-size: 35px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: rgba(134, 126, 126, 0.932) 3px solid;
+    background: rgba(167, 164, 164, 0.11);
+    color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+
+    h1 {
+      padding-top: 25px;
+      padding-bottom: 5px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+
+      @include tablet {
+        font-size: 20px;
+      }
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+      @include tablet {
+        font-size: 15px;
+      }
+
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+}
