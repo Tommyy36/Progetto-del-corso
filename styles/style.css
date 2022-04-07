@@ -266,24 +266,8 @@
 
 .cur-p {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   letter-spacing: 0.8px;
-}
-
-.cur-right img {
-  width: 100px;
-}
-
-@media screen and (max-width: 1000px) {
-  .cur-right img {
-    padding-right: 30px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .cur-right img {
-    width: 300px;
-  }
 }
 
 .cur-color {
